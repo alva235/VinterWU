@@ -1,0 +1,9 @@
+#container{
+    display:grid;
+    height:100vh;
+    grid-template-areas: 
+    'hd hd hd'
+    'nv nv nv'
+    'as mn as'
+    'ft ft ft';
+}
