@@ -1,9 +1,53 @@
 #container{
     display:grid;
     height:100vh;
+    grid-template: 15% 10% 65% 10% / 33% 34% 33%;
     grid-template-areas: 
     'hd hd hd'
     'nv nv nv'
-    'as mn as'
+    'as1 mn as2'
     'ft ft ft';
+    margin: 0;
+}
+
+
+.header{
+grid-area: hd;
+
+
+background-color: blueviolet;
+}
+
+.nav{
+grid-area: nv;
+
+background-color: aqua;
+
+
+}
+
+.main{
+grid-area: mn;
+
+background-color: chocolate;
+
+}
+
+.aside1{
+grid-area: as1;
+
+background-color: darkgreen;
+
+}
+
+.aside2{
+grid-area: as2;
+
+background-color: brown;
+
+}
+
+.footer{
+    grid-area: ft;
+    background-color: hotpink;
 }
