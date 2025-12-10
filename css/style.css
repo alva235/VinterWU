@@ -8,6 +8,7 @@
     'as1 mn as2'
     'ft ft ft';
     margin: 0;
+    gap: 5px;
 }
 
 
@@ -52,4 +53,10 @@ background-color: brown;
 .footer{
     grid-area: ft;
     background-color: hotpink;
+}
+
+.bild1{
+    height: 30%;
+    width: 60%;
+    border-radius: 100%;
 }
