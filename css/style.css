@@ -39,6 +39,7 @@ background-color: chocolate;
 .aside1{
 grid-area: as1;
 
+
 background-color: darkgreen;
 
 }
@@ -56,6 +57,11 @@ background-color: brown;
 }
 
 .bild1{
+    display:flex;
+    justify-self: center;
+    margin: 10px;
+    
+
     height: 30%;
     width: 60%;
     border-radius: 100%;
