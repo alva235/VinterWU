@@ -1,3 +1,7 @@
+
+
+/*sida 1, startsida*/
+
 #container{
     display:grid;
     height:100vh;
@@ -9,60 +13,168 @@
     'ft ft ft';
     margin: 0;
     gap: 5px;
+    
 }
 
 
 .header{
+display: flex;
+flex-direction: row;
 grid-area: hd;
-font-size: 250%;
+font-size: 150%;
 font-family: 'Times New Roman', Times, serif;
-
-
-background-color: blueviolet;
+padding: 20px;
+border-radius: 25px;
+justify-content: center;
+background-color: yellow;
 }
 
 .nav{
 grid-area: nv;
-
 background-color: aqua;
-
-
 }
 
 .main{
 grid-area: mn;
-
-background-color: chocolate;
+background-color: white;
 
 }
 
 .aside1{
 grid-area: as1;
-
-
-background-color: darkgreen;
+background-color: white;
 
 }
 
 .aside2{
 grid-area: as2;
-
-background-color: brown;
-
+background-color: white;
 }
 
 .footer{
     grid-area: ft;
-    background-color: hotpink;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .bild1{
     display:flex;
     justify-self: center;
-    margin: 10px;
+    margin: 65px;
+    margin-bottom: 120px;
+    box-shadow: 10px 10px 30px black;
+    height: 30%;
+    width: 60%;
+    border-radius: 100%;
+}
+
+.bild2{
+    display: flex;
+    height: 30%;
+    width: 60%;
+    border-radius: 100%;
+    margin: 20px;
+    justify-self: center;
+    align-self: flex-end;
+    box-shadow: 10px 10px 30px black;
     
+}
+
+.bild3{
+    display:flex;
+    justify-self: center;
+    margin: 65px;
+    margin-bottom: 120px;
+    box-shadow: 10px 10px 30px black;
 
     height: 30%;
     width: 60%;
     border-radius: 100%;
+}
+
+.bild4{
+    display: flex;
+    height: 30%;
+    width: 60%;
+    border-radius: 100%;
+    margin: 20px;
+    justify-self: center;
+    align-self: flex-end;
+    box-shadow: 10px 10px 30px black;
+}
+
+.logo{
+    display: flex;
+    width: 10%;
+    height: 100%;
+   
+}
+
+/* sida 2, kommentarer/chatt & bokning */
+
+.container2{
+    display: grid;
+    height:100vh;
+    grid-template-rows: 15% 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: 70% 30%;
+    grid-template-areas: 
+    'hd hd'
+    'nv nv'
+    'ar1 dv'
+    'ar2 dv'
+    'ar3 as'
+    'ft ft';
+    gap: 5px;
+    margin: 0;
+    
+}
+
+.header2{
+    grid-area: hd;
+    color: yellow;
+
+}
+
+.nav2{
+    grid-area: nv;
+    color: aqua;
+
+}
+
+.article1{
+    grid-area: ar1;
+    color: blueviolet;
+
+}
+
+.article2{
+    grid-area: ar2;
+    color: orange;
+
+}
+
+.article3{
+    grid-area: ar3;
+    color: red;
+
+}
+
+.div{
+    grid-area: dv;
+    color: green;
+
+}
+
+.aside3{
+    grid-area: as;
+    color: lightcoral;
+
+}
+
+.footer2{
+    grid-area: ft;
+    color: yellow;
+
 }
