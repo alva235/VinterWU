@@ -31,7 +31,17 @@ background-color: yellow;
 
 .nav{
 grid-area: nv;
-background-color: aqua;
+background-color: white;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+border-bottom: solid;
+border-top: solid;
+}
+
+.a{
+    color: black;
 }
 
 .main{
@@ -57,6 +67,9 @@ background-color: white;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
+    text-decoration: underline;
+    border-top: solid;
 }
 
 .bild1{
@@ -131,50 +144,192 @@ background-color: white;
     
 }
 
+
 .header2{
     grid-area: hd;
-    color: yellow;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    grid-area: hd;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    border-radius: 25px;
+    justify-content: center;
+    background-color: yellow;
 
 }
 
 .nav2{
     grid-area: nv;
-    color: aqua;
-
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid;
+    border-top: solid;
 }
 
 .article1{
     grid-area: ar1;
-    color: blueviolet;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 10px 10px 15px black;
 
 }
 
 .article2{
     grid-area: ar2;
-    color: orange;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 10px 10px 15px black;
 
 }
 
 .article3{
     grid-area: ar3;
-    color: red;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    margin: 10px;
+    box-shadow: 10px 10px 15px black;
 
 }
 
 .div{
     grid-area: dv;
-    color: green;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+
+
 
 }
 
 .aside3{
     grid-area: as;
-    color: lightcoral;
+    background-color: white;
+    border-style: solid;
+    border-color: black;
+
 
 }
 
 .footer2{
     grid-area: ft;
-    color: yellow;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: underline;
+    border-top: solid;
 
+
+}
+
+.understruken{
+    text-decoration: underline;
+    display: flex;
+    justify-content: center;
+}
+
+
+/*sida 3 - cards */
+
+
+.container3{
+    display: grid;
+    height:100vh;
+    grid-template-rows: 15% 10% 32% 32% 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    'hd hd hd'
+    'nv nv nv'
+    'sc1 sc2 sc3'
+    'sc4 sc5 sc6'
+    'ft ft ft';
+    gap: 5px;
+    margin: 0;
+}
+
+.header3{
+    grid-area: hd;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    grid-area: hd;
+    font-size: 150%;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 20px;
+    border-radius: 25px;
+    justify-content: center;
+    background-color: yellow;
+}
+
+.nav3{
+    grid-area: nv;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid;
+    border-top: solid;
+}
+
+.section1{
+    grid-area: sc1;
+    background-color: orange;
+}
+
+.section2{
+    grid-area: sc2;
+    background-color: violet;
+
+
+}
+
+.section3{
+    grid-area: sc3;
+    background-color: brown;
+
+}
+
+.section4{
+    grid-area: sc4;
+    background-color: hotpink;
+
+}
+
+.section5{
+    grid-area: sc5;
+    background-color: blue;
+
+}
+
+.section6{
+    grid-area: sc6;
+    background-color: green;
+
+}
+
+.footer3{
+    grid-area: ft;
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: underline;
+    border-top: solid;
+  
 }
