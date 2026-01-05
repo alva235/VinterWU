@@ -248,15 +248,15 @@ background-color: white;
     display: grid;
     height:100vh;
     grid-template-rows: 15% 10% 32% 32% 10%;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 100%;
     grid-template-areas: 
-    'hd hd hd'
-    'nv nv nv'
-    'sc1 sc2 sc3'
-    'sc4 sc5 sc6'
-    'ft ft ft';
+    'hd '
+    'nv'
+    'sc1'
+    'sc2'
+    'ft';
     gap: 5px;
-    margin: 0;
+    margin: 0px;
 }
 
 .header3{
@@ -285,42 +285,24 @@ background-color: white;
 
 .section1{
     grid-area: sc1;
-    background-color: orange;
-   
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
    
     
 }
 
 .section2{
-    grid-area: sc2;
-    background-color: violet;
-
-
+grid-area: sc2;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
 }
 
-.section3{
-    grid-area: sc3;
-    background-color: brown;
 
-}
 
-.section4{
-    grid-area: sc4;
-    background-color: hotpink;
 
-}
-
-.section5{
-    grid-area: sc5;
-    background-color: blue;
-
-}
-
-.section6{
-    grid-area: sc6;
-    background-color: green;
-
-}
 
 .footer3{
     grid-area: ft;
@@ -337,8 +319,8 @@ background-color: white;
 .card{
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 33%;
-  height: 100%;
+  width: 12%;
+  height: 95%;
   margin: 0 auto;
   
 }
